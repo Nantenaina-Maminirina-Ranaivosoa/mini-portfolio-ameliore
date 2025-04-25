@@ -17,3 +17,19 @@ faders.forEach(fader => {
 document.getElementById('toggle-dark').addEventListener('click', () => {
     document.body.classList.toggle('dark');
   });
+
+
+  // Bouton retour en haut
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

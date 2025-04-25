@@ -36,3 +36,22 @@
     cursor: pointer;
   }
   
+
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    background-color: #d4caca;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #scrollTopBtn.show {
+    display: block;
+  }
+  
