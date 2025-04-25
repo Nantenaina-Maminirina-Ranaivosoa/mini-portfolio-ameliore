@@ -12,3 +12,8 @@ const appearOnScroll = new IntersectionObserver((entries) => {
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
+
+// Mode sombre
+document.getElementById('toggle-dark').addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
